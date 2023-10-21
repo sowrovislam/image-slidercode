@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_marginTop="20dp"
+        android:id="@+id/smartSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="1000"
+        android:layout_alignParentBottom="true"
+        app:iss_placeholder="@drawable/ic_launcher_foreground"
+        app:iss_error_image="@drawable/ic_launcher_background"
+        app:iss_delay="0"/>
+
+
+
+</RelativeLayout>
